@@ -1,5 +1,7 @@
 package practice04;
 
+import static java.lang.String.format;
+
 public class Person {
 
     private String name;
@@ -23,6 +25,6 @@ public class Person {
     }
 
     String backIntroduce() {
-        return "My name is " + this.name + ". I am " + this.age + " years old.";
+        return format("My name is %s. I am %s years old.", name, age);
     }
 }

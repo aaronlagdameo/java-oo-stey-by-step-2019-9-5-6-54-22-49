@@ -1,5 +1,7 @@
 package practice04;
 
+import static java.lang.String.format;
+
 public class Student extends Person {
 
     private int klass;
@@ -15,6 +17,6 @@ public class Student extends Person {
 
     @Override
     public String introduce() {
-        return super.backIntroduce() + " I am a Student. I am at Class " + this.klass + ".";
+        return super.backIntroduce() + format(" I am a Student. I am at Class %s.", klass);
     }
 }
